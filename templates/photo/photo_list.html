@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for photo in object_list %}
+ <div class="">
+   <h2><a href="{% url 'photos:photo_id' photo.id %}">{{ photo.photo_name }}</a></h2>
+   <p>{{ photo.photo_name }}</p>
+ </div>
+{% endfor %}
+{% endblock content %}

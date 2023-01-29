@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} My store {% endblock %}
+{% block content%}
+<h1> 照片名稱 : {{photo.photo_name}} </h1>
+<ul>
+  <li>所在位置 : {{photo.photo_location}}</li>
+  <li>時間 : {{photo.photo_time}}</li>
+  <li>備註 : {{photo.photo_text}}</li>
+</ul>
+{% endblock %}
